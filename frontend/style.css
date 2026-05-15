@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+h1 {
+    padding: 20px 40px;
+    margin: 0;
+    font-size: 48px;
+}
+
+.app {
+    display: flex;
+    gap: 40px;
+    padding: 20px 40px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE */
+
+.left-panel {
+    width: 320px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tamagotchi {
+    width: 280px;
+    height: auto;
+}
+
+.mood-card {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.mood-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+.tip-card {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+/* RIGHT SIDE */
+
+.right-panel {
+    flex: 1;
+    min-width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    padding-bottom: 110px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    font-size: 28px;
+    border-radius: 15px;
+    border: 2px solid #4d7cff;
+    padding: 20px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.feed-button {
+    position: absolute;
+    right: 30px;
+    top: 250px;
+    z-index: 999;
+
+    background: #2f6df6;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 16px 28px;
+
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.feed-button:hover {
+    background: #1e56d8;
+}
+
+#response {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* TITLES */
+
+.pixel-title {
+    display: inline-block;
+
+    font-size: 30px;
+    line-height: 1;
+
+    font-weight: 900;
+
+    padding: 8px 18px;
+
+    margin-top: 6px;
+    margin-bottom: 12px;
+
+    border-radius: 18px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    font-family: Impact, "Arial Black", sans-serif;
+
+    transition: transform 0.2s ease;
+
+    box-shadow:
+        0 5px 0 rgba(0,0,0,0.25),
+        0 10px 25px rgba(0,0,0,0.15);
+
+    text-shadow:
+        2px 2px 0 rgba(255,255,255,0.25),
+        3px 3px 6px rgba(0,0,0,0.35);
+}
+
+.pixel-title:hover {
+    transform: scale(1.05);
+}
+
+.reaction-title {
+    background: linear-gradient(135deg, #ff7eb3, #ff4f81);
+    color: white;
+}
+
+.hint-title {
+    background: linear-gradient(135deg, #ffd54f, #ff9800);
+    color: white;
+}
+
+.turn-title {
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+    color: white;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.feedback-title {
+    background: linear-gradient(135deg, #64b5f6, #1976d2);
+    color: white;
+}
+
+.score-title {
+    background: linear-gradient(135deg, #ba68c8, #8e24aa);
+    color: white;
+}
+
+.challenge-title {
+    background: linear-gradient(135deg, #ef5350, #c62828);
+    color: white;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* SUBMITTED PROMPT */
+
+.submitted-prompt {
+    display: inline-block;
+    background: #eef3ff;
+    border: 2px solid #4d7cff;
+    border-radius: 14px;
+    padding: 12px 18px;
+    font-size: 24px;
+    font-family: monospace;
+    margin-bottom: 18px;
+}

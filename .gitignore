@@ -1,0 +1,6 @@
+.env
+__pycache__/
+.adk/
+*.pyc
+textbook.pdf
+artifacts/

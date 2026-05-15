@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feynman Tamagotchi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Feynman Tamagotchi</h1>
+
+<div class="app">
+
+    <div class="left-panel">
+
+        <img id="tamagotchi" src="hungry.png">
+
+        <div class="mood-card">
+            <h2 id="moodText">Mood: hungry</h2>
+
+            
+        </div>
+
+        <div class="tip-card">
+            <h3>Tip</h3>
+
+            <p>
+                Feed your Tamagotchi by teaching it concepts simply using the Feynman technique.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="right-panel">
+
+        <textarea
+            id="studentInput"
+            placeholder="What did you learn today?"
+        ></textarea>
+
+        <div id="response"></div>
+
+        <button class="feed-button" onclick="feedTamagotchi()">
+            Feed Tamagotchi
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
