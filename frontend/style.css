@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #f3f6fb;
 }
 
 h1 {
@@ -149,17 +149,17 @@ textarea {
 }
 
 .reaction-title {
-    background: linear-gradient(135deg, #ff7eb3, #ff4f81);
+    background: linear-gradient(135deg, #5b8def, #3b6fe0);
     color: white;
 }
 
 .hint-title {
-    background: linear-gradient(135deg, #ffd54f, #ff9800);
+    background: linear-gradient(135deg, #7aa6ff, #5b8def);
     color: white;
 }
 
 .turn-title {
-    background: linear-gradient(135deg, #66bb6a, #43a047);
+    background: linear-gradient(135deg, #4f7df0, #345edb);
     color: white;
     animation: pulse 1.5s infinite alternate;
 }
