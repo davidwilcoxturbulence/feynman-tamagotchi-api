@@ -6,3 +6,4 @@ google-adk
 google-genai
 openai
 python-dotenv
+litellm>=1.75.5
